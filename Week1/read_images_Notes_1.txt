@@ -1,0 +1,59 @@
+Chapter 1 - Image Processing
+======================================================
+Image : 2D representation of digital values
+Transform this 2D to following:
+    - New representation (new image)
+    - Decision (perform task)
+    - Result (correct classification)
+    - Extract useful information (object detection)
+
+Image Processing Steps:
+    1. Img-processing techniques to detect something
+        - Low level process
+            * Noise Removal
+            * Image sharpening
+            * Illumination normalization
+            * Perspective correction
+        - Mid level process
+            * Representation of image like in vector (attributes) which summarize the information
+            * Prepare for Feature representation and selection
+        - High level process
+            * Face recognition
+            * Emotion recognition
+            * Drowsiness and distraction detection
+            * Remote heart rate measurement from the face
+    2. Results of processing steps by showing box around the object
+    3. Save the results
+
+Image Formulation:
+    Image can be described as 2D function f(x,y) where (x,y) are spatial coordinates.
+    This f value is proportional to Brightness or Gray levels
+    Digital image : When both (x,y) and f are all Finite discrete quantities
+        x = height of image
+        y = width of image
+    Greyscale Image:
+        One sample per pixel
+        f(x,y) = [0,255] for 8-bit image
+            0: dark and 255: light
+    Color Image:
+        Three samples per pixel
+        fR(x,y) fG(x,y) fB(x,y) = [0,255] for 8*3=24 bit image
+    B/W Image:
+        One sample per pixel
+        f(x,y) = {0,255} takes only 2 values gives 2-bit image
+           0: black and 255: white
+PS: 24 bit requires three times as much memory, disk space and processing time
+    to store and manipulate 24-bit color images as compared to 8-bit color images.
+Good Read : https://homepages.inf.ed.ac.uk/rbf/HIPR2/glossary.htm
+
+Pixels: RGB model. Each color called as a channel.
+    Image resolution 800 columns * 1200 rows = 960000 pixels
+    But, its not the physical dimension of image.
+    Physical dimension of image is depends on PPI pixels per inch.
+    PPI = width(pixels) / width(inches)
+    PPI = height(pixels) / height(inches)
+    4 * 6 inches size of 800*1200 pixels image == 200 PPI
+
+File Formats supported by OpenCV4 :
+    .bmp .dib .jpeg .jpg .jpe .jp2 .png .pbm .pgm .ppm .tiff .tif
+

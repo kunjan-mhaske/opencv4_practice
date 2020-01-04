@@ -1,0 +1,6 @@
+Give image and file names through command line arguments.
+For that, we use sys.argv which is the list of arguments passed to
+the command prompt.
+sys.argv[0] = name of script
+sys.argv[1] = first argument ..  and so on..
+

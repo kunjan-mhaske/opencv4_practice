@@ -1,0 +1,11 @@
+Playing with Colored and Grayscale Images:
+
+OpenCV selected BGR color format instead of RGB because of popularity
+of BGR at the time of openCV creation.
+
+Matplotlib uses RGB color format and Matplotlib offers wide variety of
+plotting images.
+
+Hence, one should prefer the Matplotlib to show the images.
+
+And Numpy to manipulate the Image matrix.
