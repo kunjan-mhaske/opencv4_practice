@@ -1,6 +1,14 @@
 Give image and file names through command line arguments.
-For that, we use sys.argv which is the list of arguments passed to
+We can use sys.argv which is the list of arguments passed to
 the command prompt.
 sys.argv[0] = name of script
 sys.argv[1] = first argument ..  and so on..
+
+BUT,
+we should handle the arguments using argparse library of python.
+It gives user friendliness while coding and running the program.
+
+Reading Camera Frames:
+    By default, webcam has camera index 0.
+    cv2.VideoCapture(0) will capture the webcam feed.
 
