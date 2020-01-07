@@ -1,0 +1,19 @@
+FPS:
+    FPS = 1.0/(process_stop_time - process_start_time)
+
+Codecs:
+    Codecs are used to uncompress the compressed video and vice versa.
+    In OpenCV FOURCC - Four Character Code is used. It is platform
+    dependant and hence needed to be installed in system before using
+    them.
+
+Video Capture Properties:
+    Use cv2.CAP_PROP_FRAME_WIDTH like properties from frame.
+    capture.get(cv2.CAP_PROP_..... )
+
+Video (encoding) Compressing and Saving:
+    FourCC is a 4-byte code for video codec
+    ex: XVID codec for .avi format file
+        mp4v codec for .mp4 format file
+
+PS: It is platform Dependent. So, confirm it, if not working.
